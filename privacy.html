@@ -29,6 +29,7 @@
   <li>Drives are saved on your phone and synced through Apple's iCloud so the teen and supervisors see the same log.</li>
   <li>Synced drives, including a simplified map of each route, are stored in a shared iCloud database. <strong>Anyone who has the teen's invite code can see that family's drives.</strong> Share the code only with your supervisors.</li>
   <li>The app has no ads, no analytics and no third-party tracking.</li>
+  <li>If you use <strong>Report a Problem</strong>, a copy of the data on your phone is sent to us so we can fix the problem. Nothing is sent unless you tap Send, and reports are deleted after 90 days.</li>
   <li>"Delete All Data" in the app does <strong>not</strong> remove drives from iCloud. Email us to have them removed.</li>
 </ul>
 </div>
@@ -67,7 +68,19 @@
   <li>This means a family's data can remain in backups for up to 90 days after it is removed from iCloud.</li>
 </ul>
 
-<p>iCloud is operated by Apple. Apple's privacy policy covers how Apple stores and protects data in iCloud. We do not run our own servers for app data.</p>
+<p>iCloud is operated by Apple. Apple's privacy policy covers how Apple stores and protects data in iCloud. Apart from problem reports you choose to send (see <a href="#reports">Problem Reports</a>), we do not run our own servers for app data.</p>
+
+<h2 id="reports">Problem Reports</h2>
+<p>Settings &rsaquo; Report a Problem lets you tell us about something that isn't working. Nothing is sent unless you fill in the form and tap Send, and the form lists what will be sent before you send it. A report contains:</p>
+<ul>
+  <li>What you typed, and your email address if you choose to add one so we can reply.</li>
+  <li>A copy of what's stored in the app on your phone: your profile (name, role, state and whether you have driver's ed), each family's teen name, state, invite code and supervisors' names and roles, and every drive on the phone with the same details as the iCloud drive records above, including its simplified route (about 120 points for each part of a drive, each accurate to about 1 meter).</li>
+  <li>The app version, your iPhone model, the iOS version and your phone's time zone.</li>
+  <li>Sync status: how many uploads have failed, the last sync error, and the invite codes saved on the phone.</li>
+</ul>
+<p>Reports are sent over an encrypted connection to a server we run at tidygolinks.com, which is hosted by Railway. When a report arrives we get an email notification, sent through Resend, containing your message and your email address if you gave one, but not your drives.</p>
+<p>Only we can see reports. We use them only to look into and fix the problem you reported and to reply to you. Each report is deleted automatically 90 days after it arrives. The server's daily backups, stored with Cloudflare, can keep a copy for up to 30 days after that. To have a report deleted sooner, email us with the reference number the app showed after you sent it.</p>
+<p>If a report can't be sent, the app offers to attach it to an email to us instead. That copy travels through your email provider and ours, and we keep it in our email only as long as we need it to fix the problem.</p>
 
 <h2 id="location">Location Data</h2>
 <p>The app uses your phone's GPS to record your route while a drive is in progress. Location data is:</p>
@@ -83,21 +96,22 @@
 <h2>Data We Do Not Collect</h2>
 <p>Log My Drives does not collect:</p>
 <ul>
-  <li>Email addresses, phone numbers or other contact information</li>
+  <li>Email addresses, phone numbers or other contact information, except an email address you choose to add to a problem report</li>
   <li>Your Apple ID email address or password</li>
   <li>Advertising IDs or cross-app tracking identifiers</li>
-  <li>Analytics or usage data. The app contains no analytics service, and it does not send usage data to us or anyone else.</li>
+  <li>Analytics or usage data. The app contains no analytics service, and it does not send usage data to us or anyone else. The only thing it ever sends us is a problem report, and only when you tap Send.</li>
   <li>Your location outside of an active drive</li>
 </ul>
 <p>The app contains no ads and no third-party code that collects data.</p>
 
 <h2>No Separate Account</h2>
-<p>Log My Drives does not ask for an email address or password, and you don't create an account with us. The app syncs using the iCloud account already signed in on your iPhone. During setup you enter a display name, which is shared with your family as described above. A first name or nickname works fine.</p>
+<p>Log My Drives does not ask for an email address or password, and you don't create an account with us. (The one place you can enter an email address is the optional field in Report a Problem, so we can reply.) The app syncs using the iCloud account already signed in on your iPhone. During setup you enter a display name, which is shared with your family as described above. A first name or nickname works fine.</p>
 
 <h2>Children's Privacy</h2>
 <p>Log My Drives is designed for teen drivers (typically ages 14&ndash;17) and their parents or other supervising adults. It is not intended for children under 13.</p>
 <p>The app does collect information about teens: the name they enter, their state, their drive times and conditions, and simplified routes. When the teen is signed in to iCloud, this is synced through the shared iCloud database and can be seen by anyone with the family's invite code. We recommend that a parent help set up the app and decide who receives the invite code.</p>
-<p>A parent or guardian can ask us to delete a teen's synced data at any time. See <a href="#deletion">Data Deletion</a>.</p>
+<p>A teen can also send a problem report, which includes their drives as described in <a href="#reports">Problem Reports</a>.</p>
+<p>A parent or guardian can ask us to delete a teen's synced data, or any problem report, at any time. See <a href="#deletion">Data Deletion</a>.</p>
 
 <h2 id="deletion">Data Deletion</h2>
 <p><strong>Deleting one drive</strong> removes it from your phone and your family's phones. In iCloud, the drive record is marked as deleted so other phones remove it, but the record and its contents are kept.</p>
@@ -109,14 +123,15 @@
   <li>If you are the teen, deletes the family record (teen name, state and invite code) from the shared iCloud database.</li>
 </ul>
 <p><strong>"Delete All Data" does not delete drive records or supervisor records from the shared iCloud database.</strong> They stay there and can still be found with the invite code. Removing a supervisor from a family also marks their record as removed rather than deleting it.</p>
-<p>To have a family's drive and supervisor records deleted from iCloud, email us at <a href="mailto:busselle@gmail.com">busselle@gmail.com</a> with the teen's invite code, and we will delete them. Once nightly backups are running, copies can remain in backups for up to 90 days after that.</p>
+<p>To have a family's drive and supervisor records deleted from iCloud, email us at <a href="mailto:chris@tidygolinks.com">chris@tidygolinks.com</a> with the teen's invite code, and we will delete them. Once nightly backups are running, copies can remain in backups for up to 90 days after that.</p>
+<p><strong>Problem reports</strong> are deleted automatically 90 days after they arrive (backups can keep a copy for up to 30 days after that). "Delete All Data" does not affect reports you've already sent. To have one deleted sooner, email us with its reference number.</p>
 <p>Deleting the app from your phone removes only the data on that phone.</p>
 
 <h2>Changes to This Policy</h2>
 <p>If we make changes to this privacy policy, we will update the "Last updated" date above.</p>
 
 <h2>Contact</h2>
-<p>Questions about this privacy policy? Contact us at <a href="mailto:busselle@gmail.com">busselle@gmail.com</a>.</p>
+<p>Questions about this privacy policy? Contact us at <a href="mailto:chris@tidygolinks.com">chris@tidygolinks.com</a>.</p>
 
 <p style="margin-top: 40px;"><a href="./">&larr; Back to Log My Drives</a></p>
 </body>
